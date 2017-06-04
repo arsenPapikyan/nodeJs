@@ -1,0 +1,18 @@
+doctype 
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    //- script( src='/javascripts/react-dom.js')
+    //- script( src='/javascripts/browser.min.js')
+    //- script(type="text/babel", src='/javascripts/app.js')
+  body
+  
+    include partials/header.pug
+
+    block content
+
+    include ./partials/footer.pug
+
+    script( src='/bundle.jsx', type="text/javascript")
